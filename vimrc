@@ -25,8 +25,11 @@
 "==========================================
 
 " 修改leader键
-let mapleader = ','
-let g:mapleader = ','
+let mapleader = '\<Space>'
+let g:mapleader = '\<Space>'
+
+" 保存文件映射到 space+w
+nnoremap <Leader>w :w<CR>
 
 " 开启语法高亮
 syntax on
@@ -103,7 +106,7 @@ set t_ti= t_te=
 
 
 " 鼠标暂不启用, 键盘党....
-set mouse-=a
+" set mouse-=a
 " 启用鼠标
 " set mouse=a
 " Hide the mouse cursor while typing
@@ -156,7 +159,7 @@ set laststatus=2
 " 显示行号
 set number
 " 取消换行
-set nowrap
+set wrap
 
 " 括号配对情况, 跳转并高亮一下匹配的括号
 set showmatch
@@ -657,8 +660,8 @@ endif
 set background=dark
 set t_Co=256
 
-colorscheme solarized
-" colorscheme molokai
+" colorscheme solarized
+colorscheme molokai
 
 
 " 设置标记一列的背景颜色和数字一行颜色一致
